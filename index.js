@@ -4,7 +4,10 @@ import { create } from "./routes/albumes/create.js";
 import { update } from "./routes/albumes/update.js";
 import { remove } from "./routes/albumes/remove.js";
 
+import "dotenv/config";
 
+const HOST = process.env.HOST;
+const PORT = process.env.PORT;
 
 import { getAll } from "./routes/albumes/getAll.js";
 import { getBySlug } from "./routes/albumes/getBySlug.js";
