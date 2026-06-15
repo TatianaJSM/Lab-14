@@ -1,5 +1,10 @@
 import "dotenv/config";
 import express from "express";
+import { create } from "./routes/albumes/create.js";
+import { update } from "./routes/albumes/update.js";
+import { remove } from "./routes/albumes/remove.js";
+
+
 
 import { getAll } from "./routes/albumes/getAll.js";
 import { getBySlug } from "./routes/albumes/getBySlug.js";
@@ -39,6 +44,9 @@ app.use((req, res) => {
     error: "Ruta no encontrada"
   });
 });
+app.post("/albumes", create);
+app.put("/album/:slug", update);
+app.delete("/album/:slug", remove);
 
 app.listen(PORT, HOST, () => {
   console.log(`Servidor en http://${HOST}:${PORT}/`);
