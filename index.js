@@ -1,18 +1,13 @@
 import "dotenv/config";
 import express from "express";
-import { create } from "./routes/albumes/create.js";
-import { update } from "./routes/albumes/update.js";
-import { remove } from "./routes/albumes/remove.js";
-
-import "dotenv/config";
-
-const HOST = process.env.HOST;
-const PORT = process.env.PORT;
 
 import { getAll } from "./routes/albumes/getAll.js";
 import { getBySlug } from "./routes/albumes/getBySlug.js";
 import { getByGenre } from "./routes/albumes/getByGenre.js";
 import { search } from "./routes/albumes/search.js";
+import { create } from "./routes/albumes/create.js";
+import { update } from "./routes/albumes/update.js";
+import { remove } from "./routes/albumes/remove.js";
 
 const app = express();
 
@@ -32,6 +27,9 @@ app.get("/", (req, res) => {
       "/album/:slug",
       "/genero/:genero",
       "/search/:text",
+      "/albumes",
+      "/album/:slug",
+      "/album/:slug",
       "/imagenes/:archivo"
     ]
   });
@@ -42,14 +40,15 @@ app.get("/album/:slug", getBySlug);
 app.get("/genero/:genero", getByGenre);
 app.get("/search/:text", search);
 
+app.post("/albumes", create);
+app.put("/album/:slug", update);
+app.delete("/album/:slug", remove);
+
 app.use((req, res) => {
   res.status(404).json({
     error: "Ruta no encontrada"
   });
 });
-app.post("/albumes", create);
-app.put("/album/:slug", update);
-app.delete("/album/:slug", remove);
 
 app.listen(PORT, HOST, () => {
   console.log(`Servidor en http://${HOST}:${PORT}/`);
