@@ -1,0 +1,74 @@
+[
+  {
+    "titulo": "Thriller",
+    "artista": "Michael Jackson",
+    "genero": "Pop",
+    "anio": 1982,
+    "sello": "Epic",
+    "pistas": 9,
+    "imagen": "thriller.jpg",
+    "slug": "thriller",
+    "resumen": "El album mas vendido de la historia.",
+    "descripcion": "Album de Michael Jackson que redefinio la musica pop de los anos 80."
+  },
+  {
+    "titulo": "Back in Black",
+    "artista": "AC/DC",
+    "genero": "Rock",
+    "anio": 1980,
+    "sello": "Atlantic",
+    "pistas": 10,
+    "imagen": "back-in-black.jpg",
+    "slug": "back-in-black",
+    "resumen": "Uno de los discos de rock mas vendidos del mundo.",
+    "descripcion": "Album clasico de AC/DC con sonido potente y canciones emblematicas del hard rock."
+  },
+  {
+    "titulo": "The Dark Side of the Moon",
+    "artista": "Pink Floyd",
+    "genero": "Rock",
+    "anio": 1973,
+    "sello": "Harvest",
+    "pistas": 10,
+    "imagen": "dark-side-of-the-moon.jpg",
+    "slug": "the-dark-side-of-the-moon",
+    "resumen": "Obra conceptual fundamental del rock progresivo.",
+    "descripcion": "Disco de Pink Floyd reconocido por su produccion, concepto y experimentacion sonora."
+  },
+  {
+    "titulo": "Abbey Road",
+    "artista": "The Beatles",
+    "genero": "Rock",
+    "anio": 1969,
+    "sello": "Apple",
+    "pistas": 17,
+    "imagen": "abbey-road.jpg",
+    "slug": "abbey-road",
+    "resumen": "Uno de los albumes mas recordados de The Beatles.",
+    "descripcion": "Album historico con canciones emblematicas y una portada considerada iconica."
+  },
+  {
+    "titulo": "Random Access Memories",
+    "artista": "Daft Punk",
+    "genero": "Electronica",
+    "anio": 2013,
+    "sello": "Columbia",
+    "pistas": 13,
+    "imagen": "random-access-memories.jpg",
+    "slug": "random-access-memories",
+    "resumen": "Album moderno con influencia disco y electronica.",
+    "descripcion": "Daft Punk combino musica electronica, funk y colaboraciones destacadas en este album."
+  },
+  {
+    "titulo": "Un Verano Sin Ti",
+    "artista": "Bad Bunny",
+    "genero": "Urbano",
+    "anio": 2022,
+    "sello": "Rimas",
+    "pistas": 23,
+    "imagen": "un-verano-sin-ti.jpg",
+    "slug": "un-verano-sin-ti",
+    "resumen": "Album de gran impacto en la musica latina contemporanea.",
+    "descripcion": "Disco de Bad Bunny que mezcla reggaeton, pop latino, sonidos caribenos y temas emocionales."
+  }
+]
